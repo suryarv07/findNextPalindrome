@@ -29,8 +29,11 @@ int getNextpalindrome(int n)
             return number;
         }
         else
+        {
             ans=1;
             number++;
+        }
+
     }
     return number;
 }
