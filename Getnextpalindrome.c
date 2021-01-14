@@ -9,14 +9,14 @@ int getNextpalindrome(int n)
     if (n<10)
     {
         ans=0;
-        return n+1;
+        return n;
     }
     number=n;
     while(ans!=0)
     {
         rev=0;
         digits=0;
-        n=++number;
+        n=number;
         while(n>0)
         {
             digits=n%10;
@@ -30,6 +30,7 @@ int getNextpalindrome(int n)
         }
         else
             ans=1;
+            number++;
     }
     return number;
 }
